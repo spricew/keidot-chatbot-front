@@ -44,14 +44,16 @@ export default function Home() {
             type="text"
             placeholder="Preguntarle a Keidot"
             className="flex-1 h-full bg-transparent border-none outline-none px-2
-               text-white placeholder-white/50 text-base"
+               text-white placeholder-white/50"
           />
 
           <button
             title="enviar"
             className="flex items-center justify-center h-full aspect-square
-               bg-white text-black hover:bg-white/90 active:scale-95
-               rounded-full transition-all"
+              rounded-full ring ring-inset ring-white/10
+              bg-transparent backdrop-blur-3xl 
+              hover:bg-white/10 active:scale-95
+              ease-out duration-100 transition-all"
           >
             <IconArrowUp stroke={3} className="size-5" />
           </button>
