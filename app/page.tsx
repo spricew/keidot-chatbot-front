@@ -34,8 +34,7 @@ export default function Home() {
 
         {/* Master Input Container */}
         <div className="relative flex items-center h-full w-full gap-x-2 p-2 rounded-full 
-                bg-white/10 backdrop-blur-3xl ring ring-inset ring-white/10
-                 transition-all">
+        bg-white/10 backdrop-blur-3xl ring ring-inset ring-white/10 transition-all">
 
           <div className="pl-3 text-white/50">
             <IconSparkles className="size-6" />
