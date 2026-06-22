@@ -25,7 +25,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="w-1/2 h-full grid grid-rows-[6fr_4rem] py-10 z-10">
+      <div className="w-full lg:px-96 md:px-40 px-10 h-full grid grid-rows-[6fr_4rem] py-10 z-10">
 
         <div className="flex flex-col gap-0.5 justify-center">
           <h1 className="text-white text-4xl tracking-tight">Bienvenido de vuelta</h1>
