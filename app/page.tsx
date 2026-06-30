@@ -1,7 +1,7 @@
 import Aurora from '@/app/components/ui/animated/Aurora';
 import DarkVeil from '@/app/components/ui/animated/DarkVeil';
 
-import { IconArrowUp, IconSparkles } from '@tabler/icons-react';
+import { IconArrowUp, IconMicrophone, IconSparkles } from '@tabler/icons-react';
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="relative flex items-center h-full w-full gap-x-2 p-2 rounded-full 
         bg-white/10 backdrop-blur-3xl ring ring-inset ring-white/10 transition-all">
 
-          <div className="pl-3 text-white/50">
+          <div className="pl-3 text-white/60">
             <IconSparkles className="size-6" />
           </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
             type="text"
             placeholder="Preguntarle a Keidot"
             className="flex-1 h-full bg-transparent border-none outline-none px-2
-               text-white placeholder-white/50"
+            text-white placeholder-white/60"
           />
 
           <button
@@ -55,7 +55,8 @@ export default function Home() {
               hover:bg-white/10 active:scale-95
               ease-out duration-100 transition-all"
           >
-            <IconArrowUp stroke={3} className="size-5" />
+            {/* <IconMicrophone stroke={2} className="h-full" /> */}
+            <IconArrowUp stroke={2.5} className="size-5" />
           </button>
         </div>
 
