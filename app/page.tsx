@@ -1,9 +1,17 @@
+'use client'
+import { useState } from 'react';
+
 import Aurora from '@/app/components/ui/animated/Aurora';
 import DarkVeil from '@/app/components/ui/animated/DarkVeil';
-
 import { IconArrowUp, IconMicrophone, IconSparkles } from '@tabler/icons-react';
 
 export default function Home() {
+
+  const [text, setText] = useState("");
+
+
+
+
   return (
     <div className="flex w-full h-screen justify-center items-center bg-black">
 
@@ -41,6 +49,7 @@ export default function Home() {
           </div>
 
           <input
+            onChange={(e) => setText(e.target.value)}
             type="text"
             placeholder="Preguntarle a Keidot"
             className="flex-1 h-full bg-transparent border-none outline-none px-2
@@ -48,6 +57,7 @@ export default function Home() {
           />
 
           <button
+
             title="enviar"
             className="flex items-center justify-center h-full aspect-square
               rounded-full ring ring-inset ring-white/10
@@ -55,8 +65,7 @@ export default function Home() {
               hover:bg-white/10 active:scale-95
               ease-out duration-100 transition-all"
           >
-            {/* <IconMicrophone stroke={2} className="h-full" /> */}
-            <IconArrowUp stroke={2.5} className="size-5" />
+            {text === "" ? <IconMicrophone stroke={2} className="h-full" /> : <IconArrowUp stroke={2.5} className="size-5" />}
           </button>
         </div>
 
