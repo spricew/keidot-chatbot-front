@@ -99,10 +99,10 @@ export default function Home() {
         />
       </div>
 
-      <div className="w-full lg:px-96 md:px-40 px-10 h-full flex flex-col py-10 z-10 gap-6">
+      <div className="w-full lg:px-96 md:px-40 px-10 h-full flex flex-col py-10 z-10">
 
         {/* Contenedor de Mensajes */}
-        <div className="flex-1 flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
+        <div className="flex-1 flex flex-col gap-4 overflow-y-auto pr-2">
 
           {messages.length === 0 && (
             <div className="flex flex-col justify-center h-full">
