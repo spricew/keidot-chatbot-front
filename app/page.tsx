@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react';
 
-import Aurora from '@/app/components/ui/animated/Aurora';
 import DarkVeil from '@/app/components/ui/animated/DarkVeil';
 import { IconArrowUp, IconMicrophone, IconSparkles } from '@tabler/icons-react';
 
@@ -9,18 +8,10 @@ export default function Home() {
 
   const [text, setText] = useState("");
 
-
-
-
   return (
     <div className="flex w-full h-screen justify-center items-center bg-black">
 
       <div className="absolute inset-0 z-0 w-screen h-screen overflow-hidden">
-        {/* <Aurora
-          colorStops={["#27ff84", "#10B981", "#06B6D4"]}
-          amplitude={0.3}
-          blend={1}
-        /> */}
 
         <DarkVeil
           hueShift={130}
